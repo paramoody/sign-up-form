@@ -1,3 +1,102 @@
-div{
-    background-color: green;
+:root{
+  --light-grey: rgb(243, 239, 239);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.left-side {
+  width: 33.3%;
+  background-image: url(plant.avif);
+  background-size: cover;
+}
+.logo-field{
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  margin: 200px 0 0 0;
+  opacity: 0.5;
+}
+.right-side {
+  display: flex;
+  
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  
+  
+}
+.right-side>div{
+  flex: 1;
+
+  
+}
+
+.header{
+  max-width: 75%;
+  padding-left: 20px;
+  padding-right: 100px;
+  text-align: left;
+  
+}
+.right-top{
+  background-color:var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+ flex-direction: column;
+}
+.right-middle{
+  background-color: white;
+  
+}
+.right-bottom{
+  background-color:var(--light-grey);
+
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+.form-element{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 20px;
+}
+#sign-up-header{
+  padding: 10px 10px 10px 20px;
+}
+.btn{
+  padding: 10px 30px 10px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #596D48;
+  color: white;
+  border: #596D48;
+  box-shadow: 4px 4px lightgray;
+}
+.input-box{
+  height: 2rem;
+  width: 20rem;
+  border-radius: 5px;
+  border-color: red;
+  border: 1px solid black;
+  
+}
+.input-box:invalid{
+    border: 1px solid black;
+}
+a{
+  color: #596D48
 }
